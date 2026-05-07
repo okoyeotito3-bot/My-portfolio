@@ -209,7 +209,7 @@ aside div{
    } }
 
   /* Media Queries */
-@media (max-width:480px) {
+@media (max-width:600px) {
 
 aside div{ display:none;}
 
