@@ -29,6 +29,7 @@ color: var(--body-text);
 padding: 1rem 0 0 4rem;
 text-transform: capitalize;
 line-height: 1.7;
+font-size: 1.5rem;
 font-weight: bold;
 font-family: 'Lato', Courier, monospace;}
 
@@ -80,9 +81,9 @@ color: var(--primary-cta-button);
 
 header nav{
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
-    }
-
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+  }
 header a{ 
 
 text-decoration: none; 
@@ -161,13 +162,13 @@ padding: 2rem 2rem 2rem 0.5rem;
 line-height: 2;
 }
 
-#Recentwork a{
+#work a{
  font-weight: 900; 
  text-decoration: none; 
 }
 
-#Recentwork a,
-#Recentwork p
+#work a,
+#work p
 {
 padding: 2rem 2rem 2rem 0.5rem;
 background-color: var(--card-bg);    
@@ -222,11 +223,15 @@ justify-content: space-between;
 @media (max-width: 480px) {
 
         body{
-          padding: 1rem;
-          font-size: 1.5rem;
+            font-size: 1.1rem;
+            padding: 1rem;
         
         }
-      
+main{
+    width: 95%;
+    margin:  auto;
+}
+        aside div{display: none;}
         header{
           width: 100%;
         }
@@ -235,12 +240,8 @@ justify-content: space-between;
           font-size: 2rem;
         }
       
-        header nav{
-          flex-wrap: wrap;
-          gap: 0.5rem;
-        }
       
-        #skills, #Recentwork, #Hobbies{
+        #skills, #work, #Hobbies{
           width: 100%;
         }
 
@@ -264,10 +265,7 @@ justify-content: space-between;
           width: 80%;
         }
 
-        header nav{
-            display: grid;
-            grid-template-columns:repeat(2,1fr);
-            }
-        
+       
+         
       
       }
