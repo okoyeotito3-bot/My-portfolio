@@ -1,0 +1,259 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+:root {  /* Developer Dark — Portfolio, Website */
+    --background: #0d0d0f; /* Rich Black */
+    --surface-navbar: #141417; /* Carbon */
+    --card-bg: #1c1c21; /* Dark Charcoal */
+    --primary-cta-button: #7c6af7; /* Slate Violet */
+    --accent-highlight: #f7c76a; /* Honey Gold */
+    --body-text: #e8e8f0; /* Ghost White */
+  }
+  
+html{
+    scroll-behavior: smooth;}
+
+body.light {
+        --background: #f9f9fb;
+        --surface-navbar: #ffffff;
+        --card-bg: #ffffff;
+        --primary-cta-button: #5a4af4;
+        --accent-highlight: #e6a93d;
+        --body-text: #1a1a1a;
+      }
+
+body{
+background-color: var(--background);
+color: var(--body-text);
+padding: 1rem 0 0 4rem;
+text-transform: capitalize;
+line-height: 1.7;
+font-weight: bold;
+font-family: 'Lato', Courier, monospace;}
+
+
+       
+main{
+display: flex;
+flex-direction: column;
+gap: 4rem;
+animation: myanimation 1s ease forwards;
+}
+
+@keyframes myanimation {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+h2{
+font-family:'Archivo Black';  
+color: var(--primary-cta-button);
+font-size: 2rem;}
+
+
+header{
+width: 50%;
+padding: 1rem;
+line-height: 2;
+display: flex;
+flex-direction: column;
+gap: 1rem;}
+
+header h2{
+font-size: 3rem;}
+
+i{
+ font-size: 2rem;   
+ color: var(--primary-cta-button);}
+
+header strong{
+font-weight: bold;   
+color: var(--primary-cta-button);   
+}
+
+header nav{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+    }
+
+header a{ 
+
+text-decoration: none; 
+color: var(--primary-cta-button);
+font-size: 1.5rem;
+opacity: 0.8;}
+
+header a:hover{
+opacity: 1;
+text-decoration: underline;
+text-decoration-color: #7c6af7;
+}
+
+
+aside div{
+ width: 30px;
+ height: 20px; 
+ background-color: var(--primary-cta-button);
+ position: fixed;
+ top: 100px;
+ left: 5px;
+ animation: fixedanimation 1s linear infinite;
+}
+
+.theme-toggle{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .theme-toggle:hover{
+    transform: scale(1.2);
+    background: rgba(124, 106, 247, 0.2);
+  }
+
+@keyframes fixedanimation {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* Skills */
+
+#skills{
+width: 90%;
+display: flex;  
+flex-direction: column;
+gap: 2rem;
+line-height: 2;
+}
+
+
+#skills h2 {
+padding: 0 0 0 1rem;
+}
+
+#skills div{
+padding: 2rem 2rem 2rem 0.5rem;
+background-color: var(--card-bg);
+}
+
+#skills strong{
+display: block;
+color: var(--primary-cta-button);
+}
+
+/* recent works */
+#work{
+width: 90%;
+display: flex;  
+flex-direction: column;
+gap: 2rem;
+padding: 2rem 2rem 2rem 0.5rem;
+line-height: 2;
+}
+
+#Recentwork a{
+ font-weight: 900; 
+ text-decoration: none; 
+}
+
+#Recentwork a,
+#Recentwork p
+{
+padding: 2rem 2rem 2rem 0.5rem;
+background-color: var(--card-bg);    
+}
+
+/* Hobbies */
+#Hobbies{ 
+ width: 90%;
+display: flex;  
+flex-direction: column;
+gap: 2rem;
+padding: 2rem 2rem 2rem 0.5rem;
+line-height: 2;
+}
+
+#Hobbies h2 {
+    padding: 0 0 0 1rem;
+    }
+ 
+#Hobbies strong{
+display: block;
+color: var(--primary-cta-button);
+}   
+
+#Hobbies div{
+ background-color: var(--card-bg);   
+}
+    /* Contact */
+#Contact{
+align-self: center;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+line-height: 2;}
+ 
+#Contact p{
+    text-transform: lowercase;
+}
+
+#Contact nav{ 
+display: flex;
+justify-content: space-between; 
+}
+#Contact a{
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+#Contact a:hover{
+    opacity: 1;
+    transform: scale(1.3);
+    }
+
+@media (max-width: 480px) {
+
+        body{
+          padding: 1rem;
+        }
+      
+        header{
+          width: 100%;
+        }
+      
+        header h2{
+          font-size: 2rem;
+        }
+      
+        header nav{
+          flex-wrap: wrap;
+          gap: 0.5rem;
+        }
+      
+        #skills, #Recentwork, #Hobbies{
+          width: 100%;
+        }
+      
+      }
+
+
+
+      @media (max-width: 768px) {
+
+        body{
+          padding: 2rem;
+        }
+      
+        header{
+          width: 80%;
+        }
+      
+      }
