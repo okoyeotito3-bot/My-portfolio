@@ -215,21 +215,12 @@ aside div{
     display: none;
   }
 
-  #Contact {
-    align-self: flex-start;
-  }
-
-  header {
+ 
+  header,
+section,
+div
+ {
     width: 100%;
   }
 
-section
-
- {
-width: 100%;
-
- }
-div{
-width:100%;
-}
 }
