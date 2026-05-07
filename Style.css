@@ -210,38 +210,16 @@ aside div{
 
   /* Media Queries */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  aside div {
+    display: none;
+  }
 
-aside div{ display:none;}
+  #Contact {
+    align-self: flex-start;
+  }
 
-    #Contact{
-        align-self: flex-start;
-    }
-
-    header{
-        width: 100%; }
-  
-}
-
-
-@media (max-width:720px) {
-
-aside div{ display:none;}
-
-    #Contact{
-        align-self: flex-start;
-    }
-
-    header{
-        width: 100%; }
-}
-
-@media (max-width:768px) {
-aside div{ display:none;}
-
-    #Contact{
-        align-self: flex-start;
-    }
-    header{
-        width: 100%; }
+  header {
+    width: 100%;
+  }
 }
