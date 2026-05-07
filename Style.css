@@ -223,6 +223,8 @@ justify-content: space-between;
 
         body{
           padding: 1rem;
+          font-size: 1.5rem;
+        
         }
       
         header{
@@ -241,6 +243,12 @@ justify-content: space-between;
         #skills, #Recentwork, #Hobbies{
           width: 100%;
         }
+
+        header nav{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            }
+        
       
       }
 
@@ -255,5 +263,11 @@ justify-content: space-between;
         header{
           width: 80%;
         }
+
+        header nav{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            }
+        
       
       }
